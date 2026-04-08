@@ -29,7 +29,7 @@
 
 4. **安装插件**
    ```bash
-   claude plugin marketplace add https://github.com/FlexemDev/fboxmcp
+   claude plugin marketplace add https://github.com/FlexemDev/fbox-skills
    claude plugin install fboxmcp
    ```
 
@@ -53,7 +53,7 @@
 
 3. 在技能市场搜索 `fboxmcp` 安装，或通过 URL 安装：
    ```
-   https://github.com/FlexemDev/fboxmcp
+   https://github.com/FlexemDev/fbox-skills
    ```
 
 4. 在对话中描述设备相关需求即可激活技能。

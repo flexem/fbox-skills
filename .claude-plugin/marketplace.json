@@ -1,17 +1,17 @@
 {
-  "name": "fboxmcp",
+  "name": "fbox-skills",
   "owner": {
     "name": "flexem",
     "url": "https://github.com/FlexemDev"
   },
   "metadata": {
-    "description": "FBox 工业物联网设备管理 MCP 技能",
+    "description": "FBox 工业物联网 Claude 技能集合",
     "version": "0.1.3"
   },
   "plugins": [
     {
       "name": "fboxmcp",
-      "source": "./",
+      "source": "./fboxmcp",
       "description": "通过 MCP 管理 FBox 工业物联网设备，支持设备状态、监控点读写、报警处理、历史数据查询和远程控制",
       "version": "0.1.3",
       "author": {"name": "flexem"},
