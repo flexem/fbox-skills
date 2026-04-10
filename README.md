@@ -2,13 +2,14 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-FBox 工业物联网 Claude 技能集合，基于 Model Context Protocol (MCP) 提供设备管理能力。
+FBox 工业物联网 Claude 技能集合，提供 MCP 和 CLI 两种方式管理设备。
 
 ## 包含的技能
 
 | 技能 | 说明 | 版本 |
 |------|------|------|
-| [fboxmcp](fboxmcp/) | FBox 设备管理 — 设备状态、监控点读写、报警处理、历史数据、远程控制 | 0.1.3 |
+| [fboxmcp](fboxmcp/) | FBox 设备管理（MCP） — 设备状态、监控点读写、报警处理、历史数据、远程控制 | 0.1.4 |
+| [fboxcli](fboxcli/) | FBox 设备管理（CLI） — 命令行工具，支持自动化脚本和批量运维 | 0.1.0 |
 
 ## 快速安装
 
@@ -25,7 +26,7 @@ claude plugin marketplace add https://github.com/flexem/fbox-skills
 claude plugin install fboxmcp
 ```
 
-各技能的详细安装说明请参考对应目录下的 [INSTALL.md](fboxmcp/INSTALL.md)。
+各技能的详细安装说明请参考对应目录下的 INSTALL.md。
 
 ## 仓库结构
 
@@ -33,11 +34,16 @@ claude plugin install fboxmcp
 fbox-skills/
 ├── .claude-plugin/
 │   └── marketplace.json    # 插件市场配置
-└── fboxmcp/                # FBox 设备管理技能
+├── fboxmcp/                # FBox 设备管理技能（MCP）
+│   ├── SKILL.md            # 技能规则定义
+│   ├── README.md           # 技能说明
+│   ├── INSTALL.md          # 安装指南
+│   └── references/         # 工具参考文档
+└── fboxcli/                # FBox 设备管理技能（CLI）
     ├── SKILL.md            # 技能规则定义
     ├── README.md           # 技能说明
     ├── INSTALL.md          # 安装指南
-    └── references/         # 工具参考文档
+    └── references/         # 命令参考文档
 ```
 
 ## 许可证
